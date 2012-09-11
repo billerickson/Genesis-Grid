@@ -118,7 +118,7 @@ class BE_Genesis_Grid {
 			'features_inside' => (int) genesis_get_option( 'features_inside', 'genesis-grid' ),
 			'teasers_inside' => (int) genesis_get_option( 'teasers_inside', 'genesis-grid' ),
 			'teaser_columns' => (int) genesis_get_option( 'teaser_columns', 'genesis-grid' ),
-		) );
+		), $query );
 	}
 
 	/**
