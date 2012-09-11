@@ -107,18 +107,20 @@ class BE_Genesis_Grid {
 		( $query->is_home() && genesis_get_option( 'grid_on_home', 'genesis-grid' ) ) || 
 		( $query->is_category() && genesis_get_option( 'grid_on_category', 'genesis-grid' ) ) || 
 		( $query->is_tag() && genesis_get_option( 'grid_on_tag', 'genesis-grid' ) ) || 
-		( $query->is_search() && genesis_get_option( 'grid_on_search', 'genesis-grid' ) ) 
+		( $query->is_search() && genesis_get_option( 'grid_on_search', 'genesis-grid' ) )
 		), $query ) )
 			return false;
 	
 		// Specify pagination
-		return apply_filters( 'genesis_grid_loop_args', array(
+		$args = array(
 			'features_on_front' => (int) genesis_get_option( 'features_on_front', 'genesis-grid' ),
 			'teasers_on_front' => (int) genesis_get_option( 'teasers_on_front', 'genesis-grid' ),
 			'features_inside' => (int) genesis_get_option( 'features_inside', 'genesis-grid' ),
 			'teasers_inside' => (int) genesis_get_option( 'teasers_inside', 'genesis-grid' ),
 			'teaser_columns' => (int) genesis_get_option( 'teaser_columns', 'genesis-grid' ),
-		), $query );
+		);
+
+		return apply_filters( 'genesis_grid_loop_args', $args, $query );
 	}
 
 	/**
