@@ -6,6 +6,8 @@
  * Version: 1.0
  * Author: Bill Erickson
  * Author URI: http://www.billerickson.net
+ * Text Domain: genesis-grid
+ * Domain Path: /languages/
  *
  * This program is free software; you can redistribute it and/or modify it under the terms of the GNU 
  * General Public License version 2, as published by the Free Software Foundation.  You may NOT assume 
@@ -59,7 +61,7 @@ class BE_Genesis_Grid {
 	function init() {
 
 		// Translations
-		load_plugin_textdomain( 'genesis-grid', false, basename( dirname( __FILE__ ) ) . '/languages' );
+		load_plugin_textdomain( 'genesis-grid', false, basename( dirname( __FILE__ ) ) . '/languages/' );
 		
 		// Grid Loop Query Args
 		add_action( 'pre_get_posts', array( $this, 'be_grid_loop_query_args' ) );
@@ -403,8 +405,8 @@ function be_register_genesis_grid_settings() {
 			echo '<p><label for="' . $this->get_field_id( 'teaser_columns' ) . '">' . __( 'Teaser Columns (2-6)', 'genesis-grid' ) . '</label> <input type="text" name="' . $this->get_field_name( 'teaser_columns' ) . '" id="' . $this->get_field_id( 'teaser_columns' ) . '" value="' . $this->get_field_value( 'teaser_columns' ) . '" size="3"></p>';
 			
 			
-			echo '<h4>Image Sizes</h4>';
-			echo '<p>To use this feature, go to Genesis > Theme Settings > Content Archives and check "Include the Featured Image". You can control the size of built-in image sizes (Thumbnail, Medium, and Large) in Settings > Media.</p>';
+			echo '<h4>' . __( 'Image Sizes', 'genesis-grid' ) . '</h4>';
+			echo '<p>' . __( 'To use this feature, go to Genesis > Theme Settings > Content Archives and check "Include the Featured Image". You can control the size of built-in image sizes (Thumbnail, Medium, and Large) in Settings > Media.', 'genesis-grid' ) . '</p>';
 			
 			$sizes = genesis_get_image_sizes();
 			echo '<p>

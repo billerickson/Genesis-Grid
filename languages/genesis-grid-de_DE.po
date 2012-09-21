@@ -1,0 +1,158 @@
+# This German Language File: Copyright (C) 2012 by David Decker of deckerweb.de & genesisthemes.de
+# This file is distributed under the same license as the Genesis Grid (Loop) package.
+#
+# Weitere deutsche Sprachdateien fuer Genesis Framework, Genesis Child Themes und Genesis Plugins
+# sowie WordPress Plugins und Themes sind hier zu finden:
+# --> http://deckerweb.de/sprachdateien/
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Genesis Grid v1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/billerickson/Genesis-Grid/issues\n"
+"POT-Creation-Date: 2012-09-21 21:31:27+0100\n"
+"PO-Revision-Date: 2012-09-21 21:38+0100\n"
+"Last-Translator: David Decker <deckerweb.mobil@googlemail.com>\n"
+"Language-Team: DECKERWEB <deckerweb.mobil@googlemail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#@ genesis-grid
+#: plugin.php:49
+#, php-format
+msgid "Sorry, you cannot activate unless you have installed <a href=\"%s\">Genesis</a>"
+msgstr "Hinweis: Dieses Plugin kann <em>nicht</em> aktiviert werden, solange das <a href=\"%s\">Genesis Framework</a> nicht installiert ist."
+
+#@ genesis-grid
+#: plugin.php:283
+msgid "Genesis - Grid Loop"
+msgstr "Genesis - Grid Loop Einstellungen"
+
+#@ genesis-grid
+#: plugin.php:284
+msgid "Grid Loop"
+msgstr "Grid Loop"
+
+#@ genesis-grid
+#: plugin.php:359
+msgid "Grid Location"
+msgstr "Grid-Platzierung"
+
+#@ genesis-grid
+#: plugin.php:360
+msgid "Grid Information"
+msgstr "Grid-Information"
+
+#@ genesis-grid
+#: plugin.php:371
+msgid "Enable on:"
+msgstr "Aktivieren bei:"
+
+#@ genesis-grid
+#: plugin.php:376
+msgid "Blog Home"
+msgstr "Blog-Homepage"
+
+#@ genesis-grid
+#: plugin.php:379
+msgid "Category Archives"
+msgstr "Kategorie-Archive"
+
+#@ genesis-grid
+#: plugin.php:382
+msgid "Tag Archives"
+msgstr "Schlagwort-Archive"
+
+#@ genesis-grid
+#: plugin.php:385
+msgid "Search Results"
+msgstr "Suchergebnisse"
+
+#@ genesis-grid
+#: plugin.php:397
+msgid "Features on Front"
+msgstr "Features auf erster Grid-Seite"
+
+#@ genesis-grid
+#: plugin.php:399
+msgid "Teasers on Front"
+msgstr "Anreißer auf erster Grid-Seite"
+
+#@ genesis-grid
+#: plugin.php:401
+msgid "Features Inside"
+msgstr "Features innerhalb"
+
+#@ genesis-grid
+#: plugin.php:403
+msgid "Teasers Inside"
+msgstr "Anreißer innerhalb"
+
+#@ genesis-grid
+#: plugin.php:405
+msgid "Teaser Columns (2-6)"
+msgstr "Anreißer-Spalten (2-6)"
+
+#@ genesis-grid
+#: plugin.php:413
+msgid "Feature Image Size:"
+msgstr "Feature-Bildgröße:"
+
+#@ genesis-grid
+#: plugin.php:420
+msgid "Teaser Image Size:"
+msgstr "Anreißer-Bildgröße:"
+
+#@ genesis-grid
+#. translators: plugin header field 'Name'
+#: plugin.php:0
+msgid "Genesis Grid"
+msgstr "Genesis Grid Loop"
+
+#@ genesis-grid
+#. translators: plugin header field 'PluginURI'
+#: plugin.php:0
+msgid "https://github.com/billerickson/Genesis-Grid-Plugin"
+msgstr "https://github.com/billerickson/Genesis-Grid-Plugin"
+
+#@ genesis-grid
+#. translators: plugin header field 'Description'
+#: plugin.php:0
+msgid "Use a Grid Loop for sections of your site"
+msgstr "Grid Loop für bestimmte Bereiche von Webseiten, die mit dem Genesis Framework laufen."
+
+#@ genesis-grid
+#. translators: plugin header field 'Author'
+#: plugin.php:0
+msgid "Bill Erickson"
+msgstr "Bill Erickson"
+
+#@ genesis-grid
+#. translators: plugin header field 'AuthorURI'
+#: plugin.php:0
+msgid "http://www.billerickson.net"
+msgstr "http://www.billerickson.net"
+
+#@ genesis-grid
+#. translators: plugin header field 'Version'
+#: plugin.php:0
+msgid "1.0"
+msgstr "1.0"
+
+#@ genesis-grid
+#: plugin.php:408
+msgid "Image Sizes"
+msgstr "Bildgrößen"
+
+#@ genesis-grid
+#: plugin.php:409
+msgid "To use this feature, go to Genesis > Theme Settings > Content Archives and check \"Include the Featured Image\". You can control the size of built-in image sizes (Thumbnail, Medium, and Large) in Settings > Media."
+msgstr "Um dieses Feature zu verwenden, bitte unter <em>Genesis > Theme-Einstellungen > Inhaltsarchive</em> die Einstellung <code>Featured-Bild einschließen</code> setzen. Die von WordPress voreingestellten Bildgrößen (Vorschaubild, Medium und Groß) können unter den <em>Einstellungen > Mediathek</em> verwaltet werden."
+
