@@ -25,7 +25,12 @@ Finally, you can specify where the grid loop is used by checking Home, Category 
 1. Activate the plugin through the *Plugins* menu in WordPress.
 1. Go to Genesis > Grid Loop to customize
 
+
 == Changelog ==
+
+**Version 1.1**
+* Improved Internationalization, props @deckerweb
+* German translation files, props @deckerweb
 
 **Version 1.0**
 * Initial release
