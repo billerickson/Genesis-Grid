@@ -15,7 +15,7 @@ The Genesis Grid plugin was design to allow users of the Genesis theme to easily
 
 You can also specify the image sizes used for Features and Teasers. I recommend setting Features for Large, and Teasers for Medium. Then go to Settings > Reading and set the dimensions of those images as needed. If you have already uploaded images, use the Regenerate Thumbnails plugin to rebuild the thumbnails at these dimensions. If images aren't showing up, make sure you have "Include featured images" checked in Genesis > Theme Settings > Content Archives
 
-Finally, you can specify where the grid loop is used by checking Home, Category Archives, Tag Archives, and/or Search Results. See the Developers section for more fine-grained control.
+Finally, you can specify where the grid loop is used by checking Home, Category Archives, Tag Archives, Author Archives, and/or Search Results. See the Developers section for more fine-grained control.
 
 [Documentation](https://github.com/billerickson/Genesis-Grid/wiki) | [Support Forum](https://github.com/billerickson/Genesis-Grid/issues)
 
@@ -31,6 +31,7 @@ Finally, you can specify where the grid loop is used by checking Home, Category 
 **Version 1.1**
 * Improved Internationalization, props @deckerweb
 * German translation files, props @deckerweb
+* Added an author archive option.
 
 **Version 1.0**
 * Initial release
