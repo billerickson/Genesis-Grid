@@ -32,6 +32,7 @@ Finally, you can specify where the grid loop is used by checking Home, Category 
 * Improved Internationalization, props @deckerweb
 * German translation files, props @deckerweb
 * Added an author archive option.
+* Updated the option labels to make them easier to understand
 
 **Version 1.0**
 * Initial release

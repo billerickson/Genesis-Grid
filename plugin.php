@@ -3,7 +3,7 @@
  * Plugin Name: Genesis Grid
  * Plugin URI: https://github.com/billerickson/Genesis-Grid-Plugin
  * Description: Use a Grid Loop for sections of your site
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Bill Erickson
  * Author URI: http://www.billerickson.net
  * Text Domain: genesis-grid
@@ -400,13 +400,13 @@ function be_register_genesis_grid_settings() {
 		 */
 		function grid_information() {
 		
-			echo '<p><label for="' . $this->get_field_id( 'features_on_front' ) . '">' . __( 'Features on Front', 'genesis-grid' ) . '</label> <input type="text" name="' . $this->get_field_name( 'features_on_front' ) . '" id="' . $this->get_field_id( 'features_on_front' ) . '" value="' . $this->get_field_value( 'features_on_front' ) . '" size="3"></p>';
+			echo '<p><label for="' . $this->get_field_id( 'features_on_front' ) . '">' . __( 'Features on First Page', 'genesis-grid' ) . '</label> <input type="text" name="' . $this->get_field_name( 'features_on_front' ) . '" id="' . $this->get_field_id( 'features_on_front' ) . '" value="' . $this->get_field_value( 'features_on_front' ) . '" size="3"></p>';
 
-			echo '<p><label for="' . $this->get_field_id( 'teasers_on_front' ) . '">' . __( 'Teasers on Front', 'genesis-grid' ) . '</label> <input type="text" name="' . $this->get_field_name( 'teasers_on_front' ) . '" id="' . $this->get_field_id( 'teasers_on_front' ) . '" value="' . $this->get_field_value( 'teasers_on_front' ) . '" size="3"></p>';
+			echo '<p><label for="' . $this->get_field_id( 'teasers_on_front' ) . '">' . __( 'Teasers on First Page', 'genesis-grid' ) . '</label> <input type="text" name="' . $this->get_field_name( 'teasers_on_front' ) . '" id="' . $this->get_field_id( 'teasers_on_front' ) . '" value="' . $this->get_field_value( 'teasers_on_front' ) . '" size="3"></p>';
 
-			echo '<p><label for="' . $this->get_field_id( 'features_inside' ) . '">' . __( 'Features Inside', 'genesis-grid' ) . '</label> <input type="text" name="' . $this->get_field_name( 'features_inside' ) . '" id="' . $this->get_field_id( 'features_inside' ) . '" value="' . $this->get_field_value( 'features_inside' ) . '" size="3"></p>';
+			echo '<p><label for="' . $this->get_field_id( 'features_inside' ) . '">' . __( 'Features on Subsequent Pages', 'genesis-grid' ) . '</label> <input type="text" name="' . $this->get_field_name( 'features_inside' ) . '" id="' . $this->get_field_id( 'features_inside' ) . '" value="' . $this->get_field_value( 'features_inside' ) . '" size="3"></p>';
 
-			echo '<p><label for="' . $this->get_field_id( 'teasers_inside' ) . '">' . __( 'Teasers Inside', 'genesis-grid' ) . '</label> <input type="text" name="' . $this->get_field_name( 'teasers_inside' ) . '" id="' . $this->get_field_id( 'teasers_inside' ) . '" value="' . $this->get_field_value( 'teasers_inside' ) . '" size="3"></p>';
+			echo '<p><label for="' . $this->get_field_id( 'teasers_inside' ) . '">' . __( 'Teasers on Subsequent Pages', 'genesis-grid' ) . '</label> <input type="text" name="' . $this->get_field_name( 'teasers_inside' ) . '" id="' . $this->get_field_id( 'teasers_inside' ) . '" value="' . $this->get_field_value( 'teasers_inside' ) . '" size="3"></p>';
 
 			echo '<p><label for="' . $this->get_field_id( 'teaser_columns' ) . '">' . __( 'Teaser Columns (2-6)', 'genesis-grid' ) . '</label> <input type="text" name="' . $this->get_field_name( 'teaser_columns' ) . '" id="' . $this->get_field_id( 'teaser_columns' ) . '" value="' . $this->get_field_value( 'teaser_columns' ) . '" size="3"></p>';
 			
