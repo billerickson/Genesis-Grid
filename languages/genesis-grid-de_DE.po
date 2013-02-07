@@ -1,5 +1,5 @@
-# This German Language File: Copyright (C) 2012 by David Decker of deckerweb.de & genesisthemes.de
-# This file is distributed under the same license as the Genesis Grid (Loop) package.
+# This German Language File: Copyright (C) 2012-2013 by David Decker of deckerweb.de & genesisthemes.de
+# This file is distributed under the same license as the Genesis Grid (Loop) Plugin package.
 #
 # Weitere deutsche Sprachdateien fuer Genesis Framework, Genesis Child Themes und Genesis Plugins
 # sowie WordPress Plugins und Themes sind hier zu finden:
@@ -7,10 +7,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Genesis Grid v1.0\n"
+"Project-Id-Version: Genesis Grid v1.0.3\n"
 "Report-Msgid-Bugs-To: https://github.com/billerickson/Genesis-Grid/issues\n"
 "POT-Creation-Date: 2012-09-21 21:31:27+0100\n"
-"PO-Revision-Date: 2012-09-21 21:38+0100\n"
+"PO-Revision-Date: 2013-02-07 03:40+0100\n"
 "Last-Translator: David Decker <deckerweb.mobil@googlemail.com>\n"
 "Language-Team: DECKERWEB <deckerweb.mobil@googlemail.com>\n"
 "MIME-Version: 1.0\n"
@@ -31,82 +31,62 @@ msgid "Sorry, you cannot activate unless you have installed <a href=\"%s\">Genes
 msgstr "Hinweis: Dieses Plugin kann <em>nicht</em> aktiviert werden, solange das <a href=\"%s\">Genesis Framework</a> nicht installiert ist."
 
 #@ genesis-grid
-#: plugin.php:283
+#: plugin.php:284
 msgid "Genesis - Grid Loop"
 msgstr "Genesis - Grid Loop Einstellungen"
 
 #@ genesis-grid
-#: plugin.php:284
+#: plugin.php:285
 msgid "Grid Loop"
 msgstr "Grid Loop"
 
 #@ genesis-grid
-#: plugin.php:359
+#: plugin.php:362
 msgid "Grid Location"
 msgstr "Grid-Platzierung"
 
 #@ genesis-grid
-#: plugin.php:360
+#: plugin.php:363
 msgid "Grid Information"
 msgstr "Grid-Information"
 
 #@ genesis-grid
-#: plugin.php:371
+#: plugin.php:374
 msgid "Enable on:"
 msgstr "Aktivieren bei:"
 
 #@ genesis-grid
-#: plugin.php:376
+#: plugin.php:379
 msgid "Blog Home"
 msgstr "Blog-Homepage"
 
 #@ genesis-grid
-#: plugin.php:379
+#: plugin.php:382
 msgid "Category Archives"
 msgstr "Kategorie-Archive"
 
 #@ genesis-grid
-#: plugin.php:382
+#: plugin.php:385
 msgid "Tag Archives"
 msgstr "Schlagwort-Archive"
 
 #@ genesis-grid
-#: plugin.php:385
+#: plugin.php:391
 msgid "Search Results"
 msgstr "Suchergebnisse"
 
 #@ genesis-grid
-#: plugin.php:397
-msgid "Features on Front"
-msgstr "Features auf erster Grid-Seite"
-
-#@ genesis-grid
-#: plugin.php:399
-msgid "Teasers on Front"
-msgstr "Anreißer auf erster Grid-Seite"
-
-#@ genesis-grid
-#: plugin.php:401
-msgid "Features Inside"
-msgstr "Features innerhalb"
-
-#@ genesis-grid
-#: plugin.php:403
-msgid "Teasers Inside"
-msgstr "Anreißer innerhalb"
-
-#@ genesis-grid
-#: plugin.php:405
+#: plugin.php:411
 msgid "Teaser Columns (2-6)"
 msgstr "Anreißer-Spalten (2-6)"
 
 #@ genesis-grid
-#: plugin.php:413
+#: plugin.php:419
 msgid "Feature Image Size:"
 msgstr "Feature-Bildgröße:"
 
 #@ genesis-grid
-#: plugin.php:420
+#: plugin.php:426
 msgid "Teaser Image Size:"
 msgstr "Anreißer-Bildgröße:"
 
@@ -141,18 +121,43 @@ msgid "http://www.billerickson.net"
 msgstr "http://www.billerickson.net"
 
 #@ genesis-grid
-#. translators: plugin header field 'Version'
-#: plugin.php:0
-msgid "1.0"
-msgstr "1.0"
-
-#@ genesis-grid
-#: plugin.php:408
+#: plugin.php:414
 msgid "Image Sizes"
 msgstr "Bildgrößen"
 
 #@ genesis-grid
-#: plugin.php:409
+#: plugin.php:415
 msgid "To use this feature, go to Genesis > Theme Settings > Content Archives and check \"Include the Featured Image\". You can control the size of built-in image sizes (Thumbnail, Medium, and Large) in Settings > Media."
 msgstr "Um dieses Feature zu verwenden, bitte unter <em>Genesis > Theme-Einstellungen > Inhaltsarchive</em> die Einstellung <code>Featured-Bild einschließen</code> setzen. Die von WordPress voreingestellten Bildgrößen (Vorschaubild, Medium und Groß) können unter den <em>Einstellungen > Mediathek</em> verwaltet werden."
+
+#@ genesis-grid
+#. translators: plugin header field 'Version'
+#: plugin.php:0
+msgid "1.0.3"
+msgstr "1.0.3"
+
+#@ genesis-grid
+#: plugin.php:388
+msgid "Author Archives"
+msgstr "Autorenarchive"
+
+#@ genesis-grid
+#: plugin.php:403
+msgid "Features on First Page"
+msgstr "Feature-Beiträge auf erster Seite"
+
+#@ genesis-grid
+#: plugin.php:405
+msgid "Teasers on First Page"
+msgstr "Teaser-Beiträge auf erster Seite"
+
+#@ genesis-grid
+#: plugin.php:407
+msgid "Features on Subsequent Pages"
+msgstr "Feature-Beiträge auf nachfolgenden Seiten"
+
+#@ genesis-grid
+#: plugin.php:409
+msgid "Teasers on Subsequent Pages"
+msgstr "Teaser-Beiträge auf nachfolgenden Seiten"
 

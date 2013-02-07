@@ -1,150 +1,114 @@
+# This file is distributed under the same license as the Genesis Grid Loop package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Genesis Grid v1.0\n"
-"Report-Msgid-Bugs-To: https://github.com/billerickson/Genesis-Grid/issues\n"
-"POT-Creation-Date: 2012-09-21 21:31:27+0100\n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2013-02-07 02:41:07+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: Genesis Grid Loop\n"
 
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
-"X-Textdomain-Support: yes\n"
-"X-Poedit-SearchPath-0: .\n"
-
-#@ genesis-grid
 #: plugin.php:49
-#, php-format
 msgid "Sorry, you cannot activate unless you have installed <a href=\"%s\">Genesis</a>"
 msgstr ""
 
-#@ genesis-grid
-#: plugin.php:283
+#: plugin.php:284
 msgid "Genesis - Grid Loop"
 msgstr ""
 
-#@ genesis-grid
-#: plugin.php:284
+#: plugin.php:285
 msgid "Grid Loop"
 msgstr ""
 
-#@ genesis-grid
-#: plugin.php:359
+#: plugin.php:362
 msgid "Grid Location"
 msgstr ""
 
-#@ genesis-grid
-#: plugin.php:360
+#: plugin.php:363
 msgid "Grid Information"
 msgstr ""
 
-#@ genesis-grid
-#: plugin.php:371
+#: plugin.php:374
 msgid "Enable on:"
 msgstr ""
 
-#@ genesis-grid
-#: plugin.php:376
+#: plugin.php:379
 msgid "Blog Home"
 msgstr ""
 
-#@ genesis-grid
-#: plugin.php:379
+#: plugin.php:382
 msgid "Category Archives"
 msgstr ""
 
-#@ genesis-grid
-#: plugin.php:382
+#: plugin.php:385
 msgid "Tag Archives"
 msgstr ""
 
-#@ genesis-grid
-#: plugin.php:385
+#: plugin.php:391
 msgid "Search Results"
 msgstr ""
 
-#@ genesis-grid
-#: plugin.php:397
-msgid "Features on Front"
-msgstr ""
-
-#@ genesis-grid
-#: plugin.php:399
-msgid "Teasers on Front"
-msgstr ""
-
-#@ genesis-grid
-#: plugin.php:401
-msgid "Features Inside"
-msgstr ""
-
-#@ genesis-grid
-#: plugin.php:403
-msgid "Teasers Inside"
-msgstr ""
-
-#@ genesis-grid
-#: plugin.php:405
+#: plugin.php:411
 msgid "Teaser Columns (2-6)"
 msgstr ""
 
-#@ genesis-grid
-#: plugin.php:413
+#: plugin.php:419
 msgid "Feature Image Size:"
 msgstr ""
 
-#@ genesis-grid
-#: plugin.php:420
+#: plugin.php:426
 msgid "Teaser Image Size:"
 msgstr ""
 
-#@ genesis-grid
-#. translators: plugin header field 'Name'
 #: plugin.php:0
 msgid "Genesis Grid"
 msgstr ""
 
-#@ genesis-grid
-#. translators: plugin header field 'PluginURI'
 #: plugin.php:0
 msgid "https://github.com/billerickson/Genesis-Grid-Plugin"
 msgstr ""
 
-#@ genesis-grid
-#. translators: plugin header field 'Description'
 #: plugin.php:0
 msgid "Use a Grid Loop for sections of your site"
 msgstr ""
 
-#@ genesis-grid
-#. translators: plugin header field 'Author'
 #: plugin.php:0
 msgid "Bill Erickson"
 msgstr ""
 
-#@ genesis-grid
-#. translators: plugin header field 'AuthorURI'
 #: plugin.php:0
 msgid "http://www.billerickson.net"
 msgstr ""
 
-#@ genesis-grid
-#. translators: plugin header field 'Version'
-#: plugin.php:0
-msgid "1.0"
-msgstr ""
-
-#@ genesis-grid
-#: plugin.php:408
+#: plugin.php:414
 msgid "Image Sizes"
 msgstr ""
 
-#@ genesis-grid
-#: plugin.php:409
+#: plugin.php:415
 msgid "To use this feature, go to Genesis > Theme Settings > Content Archives and check \"Include the Featured Image\". You can control the size of built-in image sizes (Thumbnail, Medium, and Large) in Settings > Media."
 msgstr ""
 
+#: plugin.php:0
+msgid "1.0.3"
+msgstr ""
+
+#: plugin.php:388
+msgid "Author Archives"
+msgstr ""
+
+#: plugin.php:403
+msgid "Features on First Page"
+msgstr ""
+
+#: plugin.php:405
+msgid "Teasers on First Page"
+msgstr ""
+
+#: plugin.php:407
+msgid "Features on Subsequent Pages"
+msgstr ""
+
+#: plugin.php:409
+msgid "Teasers on Subsequent Pages"
+msgstr ""
