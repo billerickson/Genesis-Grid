@@ -196,7 +196,8 @@ class BE_Genesis_Grid {
 	
 			// Teasers
 			} else {
-				$classes[] = $teaser_column . ' teaser';
+				$classes[] = $teaser_column;
+				$classes[] = 'teaser';
 				if( 0 == ( $wp_query->current_post - $grid_args['features_inside'] ) || 0 == ( $wp_query->current_post - $grid_args['features_inside'] ) % $grid_args['teaser_columns'] )
 					$classes[] = 'first';
 			}
