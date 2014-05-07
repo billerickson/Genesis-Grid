@@ -106,23 +106,23 @@ class BE_Genesis_Grid {
 	
 		// Sections of site that should use grid loop	
 		if( ! apply_filters( 'genesis_grid_loop_section', ( 
-		( $query->is_home() && genesis_get_option( 'grid_on_home', 'genesis-grid' ) ) || 
+		( $query->is_home() &&     genesis_get_option( 'grid_on_home', 'genesis-grid' ) ) || 
 		( $query->is_category() && genesis_get_option( 'grid_on_category', 'genesis-grid' ) ) || 
-		( $query->is_tag() && genesis_get_option( 'grid_on_tag', 'genesis-grid' ) ) || 
-		( $query->is_author() && genesis_get_option( 'grid_on_author', 'genesis-grid' ) ) || 
-		( $query->is_date() && genesis_get_option( 'grid_on_date', 'genesis-grid' ) ) || 
-		( $query->is_tax() && genesis_get_option( 'grid_on_tax', 'genesis-grid' ) ) || 
-		( $query->is_search() && genesis_get_option( 'grid_on_search', 'genesis-grid' ) )
+		( $query->is_tag() &&      genesis_get_option( 'grid_on_tag', 'genesis-grid' ) ) || 
+		( $query->is_author() &&   genesis_get_option( 'grid_on_author', 'genesis-grid' ) ) || 
+		( $query->is_date() &&     genesis_get_option( 'grid_on_date', 'genesis-grid' ) ) || 
+		( $query->is_tax() &&      genesis_get_option( 'grid_on_tax', 'genesis-grid' ) ) || 
+		( $query->is_search() &&   genesis_get_option( 'grid_on_search', 'genesis-grid' ) )
 		), $query ) )
 			return false;
 	
 		// Specify pagination
 		$args = array(
 			'features_on_front' => (int) genesis_get_option( 'features_on_front', 'genesis-grid' ),
-			'teasers_on_front' => (int) genesis_get_option( 'teasers_on_front', 'genesis-grid' ),
-			'features_inside' => (int) genesis_get_option( 'features_inside', 'genesis-grid' ),
-			'teasers_inside' => (int) genesis_get_option( 'teasers_inside', 'genesis-grid' ),
-			'teaser_columns' => (int) genesis_get_option( 'teaser_columns', 'genesis-grid' ),
+			'teasers_on_front' =>  (int) genesis_get_option( 'teasers_on_front', 'genesis-grid' ),
+			'features_inside' =>   (int) genesis_get_option( 'features_inside', 'genesis-grid' ),
+			'teasers_inside' =>    (int) genesis_get_option( 'teasers_inside', 'genesis-grid' ),
+			'teaser_columns' =>    (int) genesis_get_option( 'teaser_columns', 'genesis-grid' ),
 		);
 
 		return apply_filters( 'genesis_grid_loop_args', $args, $query );
@@ -305,20 +305,20 @@ function be_register_genesis_grid_settings() {
 	
 			// Set the default values
 			$default_settings = array(
-				'features_on_front'   => 2,
-				'teasers_on_front' => 8,
-				'features_inside' => 0,
-				'teasers_inside' => 10,
-				'teaser_columns' => 2,
-				'grid_on_home' => 1,
-				'grid_on_category' => 1,
-				'grid_on_date' => 1,
-				'grid_on_tag' => 1,
-				'grid_on_tax' => 1,
-				'grid_on_author' => 1,
-				'grid_on_search' => 1,
+				'features_on_front'  => 2,
+				'teasers_on_front'   => 8,
+				'features_inside'    => 0,
+				'teasers_inside'     => 10,
+				'teaser_columns'     => 2,
+				'grid_on_home'       => 1,
+				'grid_on_category'   => 1,
+				'grid_on_date'       => 1,
+				'grid_on_tag'        => 1,
+				'grid_on_tax'        => 1,
+				'grid_on_author'     => 1,
+				'grid_on_search'     => 1,
 				'feature_image_size' => 'large',
-				'teaser_image_size' => 'medium',
+				'teaser_image_size'  => 'medium',
 			);
 	
 			// Create the Admin Page
