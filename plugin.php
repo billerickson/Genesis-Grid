@@ -110,6 +110,7 @@ class BE_Genesis_Grid {
 		( $query->is_category() && genesis_get_option( 'grid_on_category', 'genesis-grid' ) ) || 
 		( $query->is_tag() && genesis_get_option( 'grid_on_tag', 'genesis-grid' ) ) || 
 		( $query->is_author() && genesis_get_option( 'grid_on_author', 'genesis-grid' ) ) || 
+		( $query->is_date() && genesis_get_option( 'grid_on_date', 'genesis-grid' ) ) || 
 		( $query->is_tax() && genesis_get_option( 'grid_on_tax', 'genesis-grid' ) ) || 
 		( $query->is_search() && genesis_get_option( 'grid_on_search', 'genesis-grid' ) )
 		), $query ) )
@@ -311,6 +312,7 @@ function be_register_genesis_grid_settings() {
 				'teaser_columns' => 2,
 				'grid_on_home' => 1,
 				'grid_on_category' => 1,
+				'grid_on_date' => 1,
 				'grid_on_tag' => 1,
 				'grid_on_tax' => 1,
 				'grid_on_author' => 1,
@@ -350,6 +352,7 @@ function be_register_genesis_grid_settings() {
  				array(
  					'grid_on_home',
  					'grid_on_category',
+ 					'grid_on_date',
  					'grid_on_tag',
  					'grid_on_tax',
  					'grid_on_author',
@@ -388,6 +391,9 @@ function be_register_genesis_grid_settings() {
 
 			<input type="checkbox" name="' . $this->get_field_name( 'grid_on_tag' ) . '" id="' . $this->get_field_id( 'grid_on_tag' ) . '" value="1"' . checked( $this->get_field_value( 'grid_on_tag' ), true, false ) . ' />
 			<label for="' . $this->get_field_id( 'grid_on_tag' ) . '">' . __( 'Tag Archives', 'genesis-grid' ) . '</label>
+
+			<input type="checkbox" name="' . $this->get_field_name( 'grid_on_date' ) . '" id="' . $this->get_field_id( 'grid_on_date' ) . '" value="1"' . checked( $this->get_field_value( 'grid_on_date' ), true, false ) . ' />
+			<label for="' . $this->get_field_id( 'grid_on_date' ) . '">' . __( 'Date Archives', 'genesis-grid' ) . '</label>
 
 			<input type="checkbox" name="' . $this->get_field_name( 'grid_on_tax' ) . '" id="' . $this->get_field_id( 'grid_on_tax' ) . '" value="1"' . checked( $this->get_field_value( 'grid_on_tax' ), true, false ) . ' />
 			<label for="' . $this->get_field_id( 'grid_on_tax' ) . '">' . __( 'Taxonomy Archives', 'genesis-grid' ) . '</label>

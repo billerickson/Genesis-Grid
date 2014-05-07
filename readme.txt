@@ -28,6 +28,10 @@ Finally, you can specify where the grid loop is used by checking Home, Category 
 
 == Changelog ==
 
+**Version 1.2**
+* Added a date archive option
+* Improve how classes are added to posts
+
 **Version 1.1**
 * Added an author archive option.
 * Updated the option labels to make them easier to understand
