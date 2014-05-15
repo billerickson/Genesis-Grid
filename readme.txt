@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: genesis, genesiswp, grid, loop
 Requires at least: 3.0
 Tested up to: 3.9
-Stable tag: 1.2
+Stable tag: 1.3
 
 Customize your archive pages in Genesis to use a grid layout. Requires the Genesis theme.
 
@@ -28,15 +28,22 @@ Finally, you can specify where the grid loop is used by checking Home, Category 
 
 == Changelog ==
 
+**Version 1.3**
+
+* Fix compatibility issues with Featured Post/Page widgets
+
 **Version 1.2**
+
 * Added a date archive option
 * Other minor improvements
 
 **Version 1.1**
+
 * Added an author archive option.
 * Updated the option labels to make them easier to understand
 * Improved Internationalization, props @deckerweb
 * German translation files, props @deckerweb
 
 **Version 1.0**
+
 * Initial release
