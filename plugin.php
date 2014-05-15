@@ -168,7 +168,7 @@ class BE_Genesis_Grid {
 	function be_grid_loop_post_classes( $classes ) {
 		global $wp_query;
 		$grid_args = $this->be_grid_loop_pagination();
-		if( ! $grid_args )
+		if( ! ( $grid_args && $wp_query->is_main_query() ) )
 			return $classes;
 			
 		// Convert teaser column to a class
