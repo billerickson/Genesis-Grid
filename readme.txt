@@ -3,8 +3,8 @@ Contributors: billerickson
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MQKRBRFVRUV8C
 Tags: genesis, genesiswp, grid, loop
 Requires at least: 3.0
-Tested up to: 3.9
-Stable tag: 1.3
+Tested up to: 4.0
+Stable tag: 1.4
 
 Customize your archive pages in Genesis to use a grid layout. Requires the Genesis theme.
 
@@ -17,7 +17,10 @@ You can also specify the image sizes used for Features and Teasers. I recommend 
 
 Finally, you can specify where the grid loop is used by checking Home, Category Archives, Tag Archives, Taxonomy Archives, Author Archives, and/or Search Results. See the Developers section for more fine-grained control.
 
-[Documentation](https://github.com/billerickson/Genesis-Grid/wiki) | [Support Forum](https://github.com/billerickson/Genesis-Grid/issues)
+[Documentation](https://github.com/billerickson/Genesis-Grid/wiki)
+
+**No support will be provided by the developer**
+
 
 == Installation ==
 
@@ -27,6 +30,10 @@ Finally, you can specify where the grid loop is used by checking Home, Category 
 
 
 == Changelog ==
+
+**Version 1.4**
+ 
+* Added support for custom post type archives
 
 **Version 1.3**
 

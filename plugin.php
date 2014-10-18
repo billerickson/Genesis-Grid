@@ -3,7 +3,7 @@
  * Plugin Name: Genesis Grid
  * Plugin URI: https://github.com/billerickson/Genesis-Grid-Plugin
  * Description: Use a Grid Loop for sections of your site
- * Version: 1.3
+ * Version: 1.4
  * Author: Bill Erickson
  * Author URI: http://www.billerickson.net
  * Text Domain: genesis-grid
@@ -104,6 +104,16 @@ class BE_Genesis_Grid {
 		if( !isset( $query ) || empty( $query ) || !is_object( $query ) )
 			$query = $wp_query;
 	
+		// Check for custom post types archives
+		$custom_post_type_grid = false;
+		$custom_post_types     = be_custom_post_types();
+		if ( $query->is_post_type_archive() && $custom_post_types ) {
+			foreach ( $custom_post_types as $post_type ) {
+				if ( $query->is_post_type_archive( $post_type[0] ) && genesis_get_option( 'grid_on_' . $post_type[0], 'genesis-grid' ) )
+					$custom_post_type_grid = true;
+			}
+		}
+
 		// Sections of site that should use grid loop	
 		if( ! apply_filters( 'genesis_grid_loop_section', ( 
 		( $query->is_home() &&     genesis_get_option( 'grid_on_home', 'genesis-grid' ) ) || 
@@ -112,10 +122,11 @@ class BE_Genesis_Grid {
 		( $query->is_author() &&   genesis_get_option( 'grid_on_author', 'genesis-grid' ) ) || 
 		( $query->is_date() &&     genesis_get_option( 'grid_on_date', 'genesis-grid' ) ) || 
 		( $query->is_tax() &&      genesis_get_option( 'grid_on_tax', 'genesis-grid' ) ) || 
-		( $query->is_search() &&   genesis_get_option( 'grid_on_search', 'genesis-grid' ) )
+		( $query->is_search() &&   genesis_get_option( 'grid_on_search', 'genesis-grid' ) ) ||
+		$custom_post_type_grid
 		), $query ) )
 			return false;
-	
+
 		// Specify pagination
 		$args = array(
 			'features_on_front' => (int) genesis_get_option( 'features_on_front', 'genesis-grid' ),
@@ -346,10 +357,10 @@ function be_register_genesis_grid_settings() {
 					'teaser_columns',
 					'feature_image_size',
 					'teaser_image_size',
+					'grid_on_cpt',
  				) );
- 				
- 			genesis_add_option_filter( 'one_zero', $this->settings_field,
- 				array(
+ 			
+ 			$one_zero = array(
  					'grid_on_home',
  					'grid_on_category',
  					'grid_on_date',
@@ -357,7 +368,16 @@ function be_register_genesis_grid_settings() {
  					'grid_on_tax',
  					'grid_on_author',
  					'grid_on_search',
- 				) );
+ 				);
+
+ 			$custom_post_types = be_custom_post_types();
+ 			if ( $custom_post_types ) {
+ 				foreach( $custom_post_types as $post_type ) {
+ 					$one_zero[] = 'grid_on_' . $post_type[0];
+ 				}
+ 			}
+
+ 			genesis_add_option_filter( 'one_zero', $this->settings_field, $one_zero );
 
 		}
 	
@@ -403,9 +423,16 @@ function be_register_genesis_grid_settings() {
 
 			<p><input type="checkbox" name="' . $this->get_field_name( 'grid_on_search' ) . '" id="' . $this->get_field_id( 'grid_on_search' ) . '" value="1"' . checked( $this->get_field_value( 'grid_on_search' ), true, false ) . ' />
 			<label for="' . $this->get_field_id( 'grid_on_search' ) . '">' . __( 'Search Results', 'genesis-grid' ) . '</label></p>
-
-	
 			';
+
+			$custom_post_types = be_custom_post_types();
+			if ( $custom_post_types ) {
+				foreach( $custom_post_types as $post_type ) {
+					$name = 'grid_on_' . $post_type[0];
+					echo '<p><input type="checkbox" name="' . $this->get_field_name( $name ) . '" id="' . $this->get_field_id( $name ) . '" value="1"' . checked( $this->get_field_value( $name ), true, false ) . ' />
+					<label for="' . $this->get_field_id( $name ) . '">' . $post_type[1] . ' ' . __( 'Archives', 'genesis-grid' ) . '</label></p>';
+				}
+			}
 		}
 
 		/**
@@ -443,11 +470,33 @@ function be_register_genesis_grid_settings() {
 				echo '<option value="' . $name . '"' . selected( $this->get_field_value( 'teaser_image_size' ), $name, FALSE ) . '>' . $name . ' (' . $size['width'] . ' &#215; ' . $size['height'] . ')</option>' . "\n";
 			echo '</select></p>';
 	
-	
 		}
+
 	}
 	global $_be_genesis_grid_settings;
 	$_be_genesis_grid_settings = new BE_Genesis_Grid_Settings;	 	
 	
 }	
 add_action( 'genesis_admin_menu', 'be_register_genesis_grid_settings'  ); 
+
+/**
+ * Helper function to get custom post types if available
+ *
+ * @since 1.3.0
+ */
+function be_custom_post_types() {
+
+	$post_types = get_post_types( array( 'public' => true, '_builtin' => false ), 'objects' );
+
+	if ( !empty( $post_types ) ) {
+		$output = array();
+		foreach ( $post_types as $key => $cpt ) {
+			if ( $cpt->has_archive == true ) {
+				$output[] = array( $key, $cpt->label );
+			}
+		}
+		return $output;
+	} else {
+		return false;
+	}
+}
