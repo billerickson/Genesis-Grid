@@ -255,6 +255,7 @@ class BE_Genesis_Grid {
 		$grid_args = $this->be_grid_loop_pagination();
 		if( ! $grid_args )
 			return;
+
 		$max = ceil ( ( $wp_query->found_posts - $grid_args['features_on_front'] - $grid_args['teasers_on_front'] ) / ( $grid_args['features_inside'] + $grid_args['teasers_inside'] ) ) + 1;
 		$wp_query->max_num_pages = $max;
 		
