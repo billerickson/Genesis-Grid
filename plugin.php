@@ -78,7 +78,16 @@ class BE_Genesis_Grid {
 		// Is Grid Loop?
 		add_filter( 'is_genesis_grid_loop', array( $this, 'be_grid_loop_pagination' ) );
 		
-	}	
+		// Add custom body class to the head
+		add_filter( 'body_class', array($this, 'md_body_class') );
+
+	}
+
+
+	function md_body_class( $classes ) {
+		$classes[] = 'grid';
+		return $classes;
+	}
 	
 	/**
 	 * Grid Loop Pagination
@@ -257,8 +266,6 @@ class BE_Genesis_Grid {
 		global $wp_query;
 		$grid_args = $this->be_grid_loop_pagination();
 		if( ! $grid_args )
-			return;
-		if ( -1 === $wp_query->query_vars[posts_per_page] )
 			return;
 
 		$max = ceil ( ( $wp_query->found_posts - $grid_args['features_on_front'] - $grid_args['teasers_on_front'] ) / ( $grid_args['features_inside'] + $grid_args['teasers_inside'] ) ) + 1;
