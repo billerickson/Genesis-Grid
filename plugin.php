@@ -3,7 +3,7 @@
  * Plugin Name: Genesis Grid
  * Plugin URI: https://github.com/billerickson/Genesis-Grid-Plugin
  * Description: Use a Grid Loop for sections of your site
- * Version: 1.4.1
+ * Version: 1.4.2
  * Author: Bill Erickson
  * Author URI: http://www.billerickson.net
  * Text Domain: genesis-grid
