@@ -3,7 +3,7 @@ Contributors: billerickson
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MQKRBRFVRUV8C
 Tags: genesis, genesiswp, grid, loop
 Requires at least: 3.0
-Tested up to: 4.3
+Tested up to: 4.9
 Stable tag: 1.4.2
 
 Customize your archive pages in Genesis to use a grid layout. Requires the Genesis theme.
@@ -39,7 +39,7 @@ Finally, you can specify where the grid loop is used by checking Home, Category 
 * Fix pagination issue when you set posts_per_page to -1
 
 **Version 1.4**
- 
+
 * Added support for custom post type archives
 
 **Version 1.3**
