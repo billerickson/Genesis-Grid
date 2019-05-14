@@ -3,7 +3,7 @@ Contributors: billerickson
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MQKRBRFVRUV8C
 Tags: genesis, genesiswp, grid, loop
 Requires at least: 3.0
-Tested up to: 4.9
+Tested up to: 5.2
 Stable tag: 1.4.2
 
 Customize your archive pages in Genesis to use a grid layout. Requires the Genesis theme.
